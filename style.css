@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+/* dark theme*/
+body{
+    background-color: #1a1b26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#header{
+    font-size:25px;
+}
+
+a{
+    color: white;
+}
+.card-header{
+    background-color:#24283b;
+}
+.card-body{
+    background-color:#414868;
+}
+.list-group-item{
+    background-color: #414868;
+    color: white;
+}
+.app-title{
+    color: white;
+}
+#txtTaskName{
+
+    background-color: #24283b;
+    color: white;
+}
+/* dark theme*/
+
+/* light theme*/
+
+body.light{
+    background-color: #9aa5ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+body.light a{
+        color: #343b58;
+}
+
+body.light .card{
+    border: 0;
+}
+body.light .card-header{
+
+    background-color:    #565f89;
+}
+body.light .card-body{
+
+    background-color:  #d5d6db;
+}
+body.light .app-title{
+    color: #24283b;
+}
+
+body.light .list-group-item{
+    background-color: #d5d6db;
+    color: black;
+}
+
+body.light #txtTaskName{
+
+    background-color:  #565f89;
+    color: white;
+}
+
+body.light ::placeholder{
+    color: white;
+}
+body.light #btnDeleteAll{
+    background-color:  #f7768e;
+}
+
+body.light #btnAddNewTask{
+    background-color:  #2ac3de;
+}
+/* light theme*/
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+.label{
+    width: 50px;
+    height: 26px;
+    background-color: #101118;
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 5px;
+}
+
+.ball{
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+.fa-moon {
+    color:white;
+}
+
+.fa-sun{
+    color: white;
+}
